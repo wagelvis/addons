@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Append and Prepend</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/form-append-prepend.css" />
+</head>
+
+<body>
+     <form class="form-inline border-radius">             
+        <div class="form-item prepend">
+            <label for="name">Name:</label>
+            <span class="adjoined"><span class="icon user"></span></span>
+            <input type="text" name="name" placeholder="John Doe" />
+        </div>
+        
+        <div class="form-item append">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="john_doe@example.com" />
+            <span class="adjoined"><span class="icon envelope"></span></span>
+        </div>
+        
+        <div class="form-item append transparent">
+            <label for="email">Website:</label>
+            <input type="website" name="website" placeholder="http://example.com" />
+            <span class="adjoined"><span class="icon globe"></span></span>
+        </div>
+    </form>
+</body>
+</html>
