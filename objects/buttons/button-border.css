@@ -1,3 +1,5 @@
+.btn.btn-rounded { border-radius: 4px; }
+.btn.btn-pill { border-radius: 25px; }
 .btn.btn-border {
   background: transparent;
   border-color: #ddd;
