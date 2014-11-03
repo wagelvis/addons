@@ -16,94 +16,91 @@
       color: #fff !important;
     }
 
+
+    // Bordered white
     &.white {
-      border-color: $bg-white;
+      border-color: map-get($bg-colors, white);
+      color: map-get($type-colors, white);
 
       &:hover {
-        background: $bg-white;
-        color: $color-black !important;
+        background: map-get($bg-colors, white);
+        color: map-get($type-colors, black) !important;
       }
+
+      &:active,
+      &:focus { background-color: $object-ui-color; }
+    }
+
+
+    // Bordered black
+    &.black {
+      border-color: map-get($bg-colors, black);
+      color: map-get($type-colors, black);
+
+      &:hover { background-color: map-get($bg-colors, black); }
+
+      &:active,
+      &:focus { background-color: map-get($bg-colors, black); }
+    }
+
+
+    // Bordered gray
+    &.gray {
+      border-color: map-get($bg-colors, gray);
+      color: map-get($type-colors, gray);
+
+      &:hover { background-color: map-get($bg-colors, gray); }
+
+      &:active,
+      &:focus { background-color: darken(map-get($bg-colors, gray), 15%); }
+    }
+
+
+    // Bordered green
+    &.green {
+      border-color: map-get($bg-colors, green);
+      color: map-get($type-colors, green);
+
+      &:hover { background-color: map-get($bg-colors, green); }
+
+      &:active,
+      &:focus { background-color: darken(map-get($bg-colors, green), 15%); }
+    }
+
+
+    // Bordered blue
+    &.blue {
+      border-color: map-get($bg-colors, blue);
+      color: map-get($type-colors, blue);
+
+      &:hover { background-color: map-get($bg-colors, blue); }
+
+      &:active,
+      &:focus { background-color: darken(map-get($bg-colors, blue), 15%); }
+    }
+
+
+    // Bordered yellow
+    &.yellow {
+      border-color: map-get($bg-colors, yellow);
+      color: map-get($type-colors, yellow);
+
+      &:hover { background-color: map-get($bg-colors, yellow); }
+
+      &:active,
+      &:focus { background-color: darken(map-get($bg-colors, yellow), 15%); }
+    }
+
+
+    // Bordered red
+    &.red {
+      border-color: map-get($bg-colors, red);
+      color: map-get($type-colors, red);
+
+      &:hover { background-color: map-get($bg-colors, red); }
+
+      &:active,
+      &:focus { background-color: darken(map-get($bg-colors, red), 15%); }
     }
   }
-}
-
-
-// Bordered white
-a.btn.btn-border.white:hover {
-  background: $bg-white;
-  color: $color-black !important;
-}
-
-.btn.btn-border.white,
-a.btn.btn-border.white { color: $color-white; }
-
-.btn.btn-border {
-&.white {
-  &:active, &:focus { background-color: $object-ui-color; }
-}
-
-
-// Bordered black
-&.black {
-  border-color: $bg-black;
-  color: $color-black;
-
-  &:hover { background-color: $bg-black; }
-
-  &:active, &:focus { background-color: $bg-black; }
-}
-
-
-// Bordered gray
-&.gray {
-  border-color: $bg-gray;
-  color: $color-gray;
-
-  &:hover { background-color: $bg-gray; }
-
-  &:active, &:focus { background-color: darken($bg-gray, 15%); }
-}
-
-
-// Bordered green
-&.green {
-  border-color: $bg-green;
-  color: $color-green;
-
-  &:hover { background-color: $bg-green; }
-
-  &:active, &:focus { background-color: darken($bg-green, 15%); }
-}
-
-
-// Bordered blue
-&.blue {
-  border-color: $bg-blue;
-  color: $color-blue;
-
-  &:hover { background-color: $bg-blue; }
-
-  &:active, &:focus { background-color: darken($bg-blue, 15%); }
-}
-
-
-// Bordered yellow
-&.yellow {
-  border-color: $bg-yellow;
-  color: $color-yellow;
-
-  &:hover { background-color: $bg-yellow; }
-
-  &:active, &:focus { background-color: darken($bg-yellow, 15%); }
-}
-
-
-// Bordered red
-&.red {
-  border-color: $bg-red;
-  color: $color-red;
-
-  &:hover { background-color: $bg-red; }
-
-  &:active, &:focus { background-color: darken($bg-red, 15%); }
 }
