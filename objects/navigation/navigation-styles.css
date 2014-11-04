@@ -76,6 +76,10 @@
 .nav-vertical li {
   display: block;
   margin-right: 0px;
+}
+
+.nav-vertical li a {
+  display: block;
   padding: 10px;
 }
 
