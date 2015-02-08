@@ -7,11 +7,9 @@
   font-weight: bold;
   opacity: .2;
 }
-
 .close:hover, .close:focus {
   color: #000;
   cursor: pointer;
-  filter: alpha(opacity=50);
   opacity: .5;
   text-decoration: none;
   transition: all 0.2s linear;
@@ -24,4 +22,6 @@ button.close {
   padding: 0;
 }
 
-.well .close { margin-top: 6px; }
+.well .close {
+  margin-top: 6px;
+}

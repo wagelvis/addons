@@ -14,12 +14,10 @@
     opacity: 0;
     position: absolute;
     pointer-events: none;
+    transform: translate3d(0, 0, 0);
+    transition: 0.3s ease;
     visibility: hidden;
     z-index: 1000000;
-
-    @include vendor(transition, 0.3s ease);
-
-    @include vendor(transform, translate3d(0, 0, 0));
   }
 }
 
@@ -49,7 +47,9 @@
   background: #383838;
   color: #fff;
   content: attr(data-hint);
-  @include font-size(12px);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
   padding: 8px 10px;
   white-space: nowrap;
 }
@@ -78,16 +78,15 @@
   &:hover {
     &:after,
     &:before {
-      @include vendor(transform, translateY(-8px));
+      transform: translateY(-8px);
     }
   }
 
   &:focus {
     &:after,
     &:before {
-      @include vendor(transform, translateY(-8px));
-
-      @include vendor(transition, 0.3s ease);
+      transform: translateY(-8px);
+      transition: 0.3s ease;
     }
   }
 }
@@ -109,7 +108,7 @@
   &:focus {
     &:after,
     &:before {
-      @include vendor(transform, translateY(8px));
+      transform: translateY(8px);
     }
   }
 }
@@ -134,7 +133,7 @@
   &:focus {
     &:after,
     &:before {
-      @include vendor(transform, translateX(8px));
+      transform: translateX(8px);
     }
   }
 }
@@ -159,11 +158,11 @@
   &:focus {
     &:after,
     &:before {
-      @include vendor(transform, translateX(-8px));
+      transform: translateX(-8px);
     }
   }
 }
 
 
 // Rounded corners
-[class*='hint-'].border-radius:after { border-radius: $border-radius; }
+[class*='hint-'].border-radius:after { border-radius: 4px; }

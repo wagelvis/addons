@@ -1,4 +1,4 @@
-@media (min-width: 48em) /* 768px */ {
+@media (min-width: 48em) {
   /* Row Columns */
   .column-1 { width: 4.16666666667%; }
   .column-2 { width: 8.33333333333%; }
@@ -24,6 +24,7 @@
   .column-22 { width: 91.6666666667%; }
   .column-23 { width: 95.8333333333%; }
   .column-24 { width: 100%; }
+
 
   /* Row Columns With Gutters */
   .gutters .column-1 { width: 2.25%; }
@@ -51,6 +52,7 @@
 	.gutters .column-23 { width: 95.75%; }
 	.gutters .column-24 { width: 100%; }
 
+
   /* Push */
   .push-1 { left: 4.16666666667%; }
   .push-2 { left: 8.33333333333%; }
@@ -75,6 +77,7 @@
   .push-21 { left: 87.5%; }
   .push-22 { left: 91.6666666667%; }
   .push-23 { left: 95.8333333333%; }
+
 
   /* Push With Gutters */
   .gutters .push-1 { left: 2.25%; }
@@ -101,6 +104,7 @@
   .gutters .push-22 { left: 91.5%; }
   .gutters .push-23 { left: 95.75%; }
 
+
   /* Pull */
   .pull-1 { right: 4.16666666667%; }
   .pull-2 { right: 8.33333333333%; }
@@ -125,6 +129,7 @@
   .pull-21 { right: 87.5%; }
   .pull-22 { right: 91.6666666667%; }
   .pull-23 { right: 95.8333333333%; }
+
 
   /* Pull With Gutters */
   .gutters .pull-1 { right: 2.25%; }

@@ -1,5 +1,13 @@
-.btn.btn-rounded { border-radius: 4px; }
-.btn.btn-pill { border-radius: 25px; }
+.btn .btn-rounded {
+  border-radius: 4px;
+}
+.btn .btn-pill {
+  border-radius: 25px;
+}
+
+.btn.bg-white {
+  color: #333;
+}
 .btn.btn-border {
   background: transparent;
   border-color: #ddd;
@@ -12,22 +20,25 @@
   color: #fff !important;
 }
 .btn.btn-border.white {
-  border-color: white;
-  color: white;
+  border-color: #fff;
+  color: #fff;
 }
 .btn.btn-border.white:hover {
-  background: white;
+  background: #fff;
   color: #222222 !important;
 }
+.btn.btn-border.white:active, .btn.btn-border.white:focus {
+  background-color: #ddd;
+}
 .btn.btn-border.black {
-  border-color: #222222;
-  color: #222222;
+  border-color: #222;
+  color: #222;
 }
 .btn.btn-border.black:hover {
-  background-color: #222222;
+  background-color: #222;
 }
 .btn.btn-border.black:active, .btn.btn-border.black:focus {
-  background-color: #222222;
+  background-color: #222;
 }
 .btn.btn-border.gray {
   border-color: #999999;

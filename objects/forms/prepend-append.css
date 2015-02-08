@@ -1,5 +1,7 @@
 .prepend,
-.append { white-space: nowrap; }
+.append {
+  white-space: nowrap;
+}
 
 .prepend input,
 .prepend select,
@@ -13,7 +15,9 @@
   .prepend input,
   .prepend select,
   .append input,
-  .append select { width: 300px; }
+  .append select {
+    width: 300px;
+  }
 }
 .prepend .adjoined,
 .append .adjoined,
@@ -30,7 +34,8 @@
 .append .btn a,
 .append .btn input,
 .append .btn button {
-  padding: 0 12px; }
+  padding: 0 12px;
+}
 
 .prepend .adjoined,
 .append .adjoined,
@@ -54,22 +59,36 @@
 }
 
 .prepend.transparent input,
-.prepend.transparent select { border-left: none; }
+.prepend.transparent select {
+  border-left: none;
+}
 
 .append.transparent input,
-.append.transparent select { border-right: none; }
+.append.transparent select {
+  border-right: none;
+}
 
 .prepend input:focus:invalid,
 .prepend textarea:focus:invalid,
 .append input:focus:invalid,
-.append textarea:focus:invalid { border: 1px solid #e74c3c; }
+.append textarea:focus:invalid {
+  border: 1px solid #e74c3c;
+}
 
-.prepend .adjoined { border-right: 0px; }
+.prepend .adjoined {
+  border-right: 0px;
+}
 
-.append .adjoined { border-left: 0px; }
+.append .adjoined {
+  border-left: 0px;
+}
 
 .prepend .adjoined,
-.prepend .btn { margin-right: -4px; }
+.prepend .btn {
+  margin-right: -4px;
+}
 
 .append .adjoined,
-.append .btn { margin-left: -4px; }
+.append .btn {
+  margin-left: -4px;
+}

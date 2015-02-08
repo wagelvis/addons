@@ -12,7 +12,9 @@ blockquote {
   cite {
     color: #555;
     display: block;
-    @include font-size(14px);
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.71429;
 
     &:before { content: "\2014 \0020"; }
 
